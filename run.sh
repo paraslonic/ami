@@ -8,6 +8,6 @@ mkdir -p names
 mkdir -p blast_tab
 mkdir -p blast_stat
 blastp -query $fname.faa -db ami_BGC  -outfmt 6 -evalue 1e-5 -out blast/$fname.out
-Rscript look_blast.r $fname.out
+Rscript look_blast.R $fname.out
 rm $fname.gbff 
 
